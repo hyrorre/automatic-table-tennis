@@ -261,6 +261,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XXNJ6K5U32;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hyrorre.automatic-table-tennis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -273,6 +274,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XXNJ6K5U32;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hyrorre.automatic-table-tennis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
