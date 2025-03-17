@@ -2,6 +2,7 @@
 #include "glut.h"
 #include <GL/gl.h>
 #else // macOSのとき (普段はmacOSで開発しています)
+#define GL_SILENCE_DEPRECATION
 #include <OpenGL/OpenGL.h>
 #include <GLUT/GLUT.h>
 #include <stdlib.h>
