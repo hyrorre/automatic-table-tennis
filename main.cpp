@@ -1,7 +1,8 @@
-#if defined(WIN32) || defined(WIN64) // Windowsのとき
-#include "glut.h"
+﻿#if defined(_WIN32) || defined(_WIN64) // Windowsのとき
+#include <windows.h>
 #include <GL/gl.h>
-#else // macOSのとき (普段はmacOSで開発しています)
+#include "GL/glut.h"
+#else // macOSのとき
 #define GL_SILENCE_DEPRECATION
 #include <OpenGL/OpenGL.h>
 #include <GLUT/GLUT.h>
@@ -30,7 +31,13 @@ const int update_timer_id = 1;
 
 void Update(int timer_id);
 
+#if defined(_WIN32) || defined(_WIN64) // Windowsのとき
+int WinMain(HINSTANCE hInst, HINSTANCE hInstPrev, PSTR cmdline, int cmdshow) {
+	int argc = __argc;
+	char** argv = __argv;
+#else // macOSのとき
 int main(int argc, char** argv) {
+#endif
 	glutInit(&argc, argv);
 
 	glutInitWindowPosition(0, 0);

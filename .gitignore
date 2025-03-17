@@ -3,3 +3,12 @@ cmake-build-debug
 
 # macOS
 .DS_Store
+
+# Windows
+vcpkg_installed
+.vs
+x86
+x64
+Debug
+Release
+packages
